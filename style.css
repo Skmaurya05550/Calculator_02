@@ -1,1 +1,170 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Guerrilla&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   font-family: "Poppins", sans-serif;
+   font-weight:700;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5d9b5;
+}
+
+.calculator {
+    width:290px;
+    padding: 20px;
+    background-color: #fef3e7;
+    border-radius: 20px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.theme-switch {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    transition: 0.4s;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+    transform: translateX(20px);
+}
+
+.theme-text {
+    font-size: 14px;
+}
+
+.display {
+    display: flex;
+    flex-direction:column;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.05);
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+button {
+    padding: 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(145deg, #f2c398, #fae1cc);
+    color: #333;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    background: linear-gradient(145deg, #fae1cc, #f2c398);
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+
+body.dark {
+    background-color: #2b2b2b;
+}
+
+body.dark .calculator {
+    background-color: #333;
+}
+
+body.dark .display {
+    background-color: #444;
+    color: #fff;
+}
+
+body.dark button {
+    background: linear-gradient(145deg, #5d5d5d, #2b2b2b);
+    color: #fff;
+}
+
+body.dark .theme-text {
+    color: #fff;
+}
+.display span {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#expression, #result {
+    font-size: 2rem; 
+    text-align: right;
+}
+
+#expression.long, #result.long {
+    font-size: 1.2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
