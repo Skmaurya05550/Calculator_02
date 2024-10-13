@@ -1,6 +1,7 @@
 # Simple Calculator
 
-https://ibb.co/F6xMfck
+![17287951095766952599934466323223](https://github.com/user-attachments/assets/a0726a33-a2ee-4ff9-9ad3-826903e012fa)
+
 
 This is a basic calculator built using HTML, CSS, and JavaScript. It supports basic arithmetic operations including addition, subtraction, multiplication, and division.
 
